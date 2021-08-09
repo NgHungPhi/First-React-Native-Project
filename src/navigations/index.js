@@ -10,7 +10,7 @@ const AppNavContainer = () => {
   } = useContext(GlobalContext);
   return (
     <NavigationContainer>
-      {isLoggedIn ? <DrawerNavigator /> : <AuthNavigator />}
+      {!isLoggedIn ? <DrawerNavigator /> : <AuthNavigator />}
     </NavigationContainer>
   );
 };
