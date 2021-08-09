@@ -1,11 +1,11 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-
+import Container from '../../components/common/Container';
 const Contact = () => {
   return (
-    <View>
+    <Container>
       <Text>Contact</Text>
-    </View>
+    </Container>
   );
 };
 
