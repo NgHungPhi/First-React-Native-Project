@@ -49,6 +49,7 @@ const Input = ({
           value={value}
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
+          placeholderTextColor={'#333'}
           {...props}
         />
       </View>

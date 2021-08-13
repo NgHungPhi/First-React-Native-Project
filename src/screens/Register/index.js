@@ -1,14 +1,12 @@
-import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import React, {useState} from 'react';
+import SignupComponent from '../../components/Signup';
 
 const Register = () => {
-  return (
-    <View>
-      <Text>Register</Text>
-    </View>
-  );
+  const [form, setForm] = useState({});
+  const [errors, setErrors] = useState({});
+
+  const 
+  return <SignupComponent />;
 };
 
 export default Register;
-
-const styles = StyleSheet.create({});
