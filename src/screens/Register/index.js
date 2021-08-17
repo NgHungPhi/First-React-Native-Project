@@ -42,7 +42,7 @@ const Register = () => {
     }
     if (!form.lastName) {
       setErrors(prev => {
-        return {...prev, lastNam: 'Please add a last name'};
+        return {...prev, lastName: 'Please add a last name'};
       });
     }
     if (!form.email) {
