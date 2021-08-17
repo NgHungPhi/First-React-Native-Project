@@ -1,9 +1,19 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import SignupComponent from '../../components/Signup';
+import axiosInstance from '../../helpers/axiosInterceptor';
 
 const Register = () => {
   const [form, setForm] = useState({});
   const [errors, setErrors] = useState({});
+
+  useEffect(() => {
+    axiosInstance
+      .post('')
+      .then()
+      .catch(error => {
+        console.log('Err Register', error);
+      });
+  }, []);
 
   const onChange = ({name, value}) => {
     setForm({...form, [name]: value});

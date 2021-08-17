@@ -6,7 +6,7 @@ import Input from '../common/Input';
 import {images} from '../../assets/theme/images';
 import styles from './styles';
 import {useNavigation} from '@react-navigation/native';
-import {REGISTER} from '../../contants/routeName';
+import {REGISTER} from '../../constants/routeName';
 const LoginComponent = () => {
   const {navigate} = useNavigation();
   return (

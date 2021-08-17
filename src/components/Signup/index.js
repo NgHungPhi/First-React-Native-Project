@@ -6,7 +6,7 @@ import Input from '../common/Input';
 import {images} from '../../assets/theme/images';
 import styles from './styles';
 import {useNavigation} from '@react-navigation/native';
-import {LOGGIN} from '../../contants/routeName';
+import { LOGIN} from '../../constants/routeName';
 const SignupComponent = ({onChange, onSubmit, form, errors}) => {
   const {navigate} = useNavigation();
   return (
@@ -77,7 +77,7 @@ const SignupComponent = ({onChange, onSubmit, form, errors}) => {
         />
         <View style={styles.createSection}>
           <Text style={styles.infoText}>Already have an account?</Text>
-          <TouchableOpacity onPress={() => navigate(LOGGIN)}>
+          <TouchableOpacity onPress={() => navigate(LOGIN)}>
             <Text style={styles.linkBtn}>Login</Text>
           </TouchableOpacity>
         </View>
